@@ -1,7 +1,3 @@
-//font-family: 'Varela Round', sans-serif;
-//font-family: 'Asap', sans-serif;
-//#ff1bd1
-//#ff1bd1
 
 * {
   box-sizing: border-box;
@@ -221,7 +217,7 @@ img {
 
 .projectLink {
   text-decoration: none;
-  color: #ff1bd1;
+  color: #c2009b;
   background-color: ghostwhite;
   padding: .5em;
   border-radius: .5em;
