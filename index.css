@@ -1,0 +1,317 @@
+//font-family: 'Varela Round', sans-serif;
+//font-family: 'Asap', sans-serif;
+//#f772dc
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  background-color: ghostwhite;
+}
+
+ul {
+  float: right;
+  position: absolute;
+  top: 0;
+  right: 0;
+  font-size: .3em;
+  padding: 1em;
+  margin-top: 3em;
+}
+
+body {
+  font-family: 'Asap', sans-serif;
+  margin: 0 auto;
+  width: 100%;
+}
+
+.logo {
+  height: 8em;
+  width: 8em;
+}
+
+.highlight {
+  color: #f772dc;
+  font-weight: bold;
+}
+
+.navList {
+  display: inline;
+  list-style: none;
+  padding: 1em;
+  padding-right: 1em;
+}
+
+.navBar {
+  border-bottom: 3px solid #f772dc;
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 100%;
+  height: 5em;
+  background-color: black;
+  color: white;
+  margin: 0 auto;
+}
+
+.navLink {
+  text-decoration: none;
+  color: #f772dc;
+  font-family: 'Asap', sans-serif;
+  font-size: small;
+}
+
+.navLink:hover {
+  cursor: pointer;
+  color: white;
+  font-weight: bold;
+  transition-duration: 500ms;
+}
+
+.hello {
+  text-align: center;
+  font-weight: bold;
+  font-size: medium;
+}
+
+.mainBox {
+  margin-top: 7em;
+}
+
+.emailBox {
+  text-align: center;
+  font-size: larger;
+  background-color: black;
+  border-radius: 1em;
+  padding: 1em;
+  width: 85%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 2em;
+}
+
+.animate:hover {
+  animation-name: clickMe;
+  animation-timing-function: ease-in-out;
+  animation-duration: 1s;
+  animation-iteration-count: 1;
+}
+
+.emailMe {
+  text-decoration: none;
+  color: #f772dc;
+  font-weight: bold;
+}
+
+.emailMe:hover {
+  cursor: pointer;
+  color: #f772ih;
+  font-weight: bolder;
+}
+
+.foot {
+  display: relative;
+  text-align: center;
+  width: 100%;
+  height: 3em;
+  margin: 0 auto;
+}
+
+.infoBox {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.checkIt {
+  position: sticky;
+  top: 0;
+  background-color: ghostwhite;
+  border-bottom: 1px solid #f7a1e8;
+}
+
+.contact {
+  height: 1.5em;
+  width: 1.5em;
+  margin-top: 1em;
+  margin-left: 1em;
+  background-color: #f772dc;
+  border-radius: 1em;
+  border: 1px solid black;
+}
+
+.infoFoot {
+  font-family: 'Nunito', sans-serif;
+  text-align: center;
+  color: black;
+  width: 100%;
+  margin-top: 2em;
+  margin-bottom: 2em;
+  font-size: small;
+}
+
+.me {
+  font-weight: bold;
+  font-family: 'Varela Round', sans-serif;
+}
+
+i {
+  font-size: 2em;
+  color: #f772dc;
+  padding: 1%;
+}
+
+p {
+  padding: 1em;
+  text-indent: 1em;
+}
+
+.pBio {
+  font-size: 1.3em;
+}
+
+.pProject {
+  font-size: small;
+}
+
+.header {
+  text-align: center;
+  font-size: medium;
+  color: #f772dc;
+  font-family: 'Varela Round', sans-serif;
+  padding: 1em;
+  margin: 0 auto;
+}
+
+.tyHead {
+  padding: 2em;
+}
+
+.bio {
+  font-size: small;
+}
+
+img {
+  height: 20em;
+  width: 20em;
+}
+
+.projects {
+  margin-top: 3em;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+}
+
+.projectBox {
+  display: flex;
+  justify-content: space-around;
+  flex-flow: row wrap;
+  padding: 1em;
+  border-radius: 1em;
+  border: 2px solid black;
+  background-color: black;
+  color: ghostwhite;
+  margin-bottom: 2em;
+  flex: 1;
+  margin: 1em;
+}
+
+.projectLink {
+  text-decoration: none;
+  color: #f772dc;
+  background-color: ghostwhite;
+  padding: .5em;
+  border-radius: .5em;
+}
+
+.projectLink:hover {
+  cursor: pointer;
+  background-color: #f772dc;
+  color: white;
+  transition-duration: 500ms;
+}
+
+
+.projectTitle {
+  font-size: medium;
+  font-weight: bold;
+  color: #f772dc;
+  font-family: 'Varela Round', sans-serif;
+  text-align: center;
+}
+
+.projectImage {
+  height: 10em;
+  width: 10em;
+  border-radius: 2em;
+  border: 1px solid #f772dc;
+}
+
+.projectImage2 {
+  height: 9em;
+  width: 13em;
+  border-radius: 2em;
+  border: 1px solid #f772dc;
+}
+
+.tech, .links {
+  margin: auto;
+  text-align: center;
+  font-size: xx-small;
+}
+
+::-webkit-scrollbar {
+    width: .5em;
+}
+
+::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px grey;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #f772dc;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #f772dc;
+}
+
+@keyframes clickMe {
+  0%, 100% {
+    transform: initial;
+  }
+  50% {
+    transform: rotateX(180deg);
+  }
+}
+
+@media only screen and (min-width: 425px) {
+
+  .hello, .header, .projectTitle, .emailMe {
+    font-size: x-large;
+  }
+
+  .pBio {
+    font-size: 1.6em;
+  }
+
+  .navLink, .pProject, .tech, .links, .infoFoot {
+    font-size: medium;
+  }
+
+  .projectImage {
+    height: 20em;
+    width: 20em;
+  }
+
+  .projectImage2 {
+    height: 20em;
+    width: 30em;
+  }
+
+  .tyHead {
+    padding: .5em;
+  }
+}
