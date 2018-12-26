@@ -1,6 +1,7 @@
 //font-family: 'Varela Round', sans-serif;
 //font-family: 'Asap', sans-serif;
-//#f772dc
+//#ff1bd1
+//#ff1bd1
 
 * {
   box-sizing: border-box;
@@ -32,7 +33,7 @@ body {
 }
 
 .highlight {
-  color: #f772dc;
+  color: #ff1bd1;
   font-weight: bold;
 }
 
@@ -44,7 +45,7 @@ body {
 }
 
 .navBar {
-  border-bottom: 3px solid #f772dc;
+  border-bottom: 3px solid #ff1bd1;
   position: absolute;
   top: 0;
   right: 0;
@@ -57,7 +58,7 @@ body {
 
 .navLink {
   text-decoration: none;
-  color: #f772dc;
+  color: #ff1bd1;
   font-family: 'Asap', sans-serif;
   font-size: small;
 }
@@ -100,7 +101,7 @@ body {
 
 .emailMe {
   text-decoration: none;
-  color: #f772dc;
+  color: #ff1bd1;
   font-weight: bold;
 }
 
@@ -136,7 +137,7 @@ body {
   width: 1.5em;
   margin-top: 1em;
   margin-left: 1em;
-  background-color: #f772dc;
+  background-color: #ff1bd1;
   border-radius: 1em;
   border: 1px solid black;
 }
@@ -158,7 +159,7 @@ body {
 
 i {
   font-size: 2em;
-  color: #f772dc;
+  color: #ff1bd1;
   padding: 1%;
 }
 
@@ -178,7 +179,7 @@ p {
 .header {
   text-align: center;
   font-size: medium;
-  color: #f772dc;
+  color: #ff1bd1;
   font-family: 'Varela Round', sans-serif;
   padding: 1em;
   margin: 0 auto;
@@ -220,7 +221,7 @@ img {
 
 .projectLink {
   text-decoration: none;
-  color: #f772dc;
+  color: #ff1bd1;
   background-color: ghostwhite;
   padding: .5em;
   border-radius: .5em;
@@ -228,7 +229,7 @@ img {
 
 .projectLink:hover {
   cursor: pointer;
-  background-color: #f772dc;
+  background-color: #ff1bd1;
   color: white;
   transition-duration: 500ms;
 }
@@ -237,7 +238,7 @@ img {
 .projectTitle {
   font-size: medium;
   font-weight: bold;
-  color: #f772dc;
+  color: #ff1bd1;
   font-family: 'Varela Round', sans-serif;
   text-align: center;
 }
@@ -246,14 +247,14 @@ img {
   height: 10em;
   width: 10em;
   border-radius: 2em;
-  border: 1px solid #f772dc;
+  border: 1px solid #ff1bd1;
 }
 
 .projectImage2 {
   height: 9em;
   width: 13em;
   border-radius: 2em;
-  border: 1px solid #f772dc;
+  border: 1px solid #ff1bd1;
 }
 
 .tech, .links {
@@ -271,11 +272,11 @@ img {
 }
 
 ::-webkit-scrollbar-thumb {
-    background: #f772dc;
+    background: #ff1bd1;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-    background: #f772dc;
+    background: #ff1bd1;
 }
 
 @keyframes clickMe {
