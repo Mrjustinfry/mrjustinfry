@@ -137,6 +137,7 @@ nav {
   padding: 3em;
   background-color: #ff1bd1;
   box-shadow: 6px 6px black;
+  flex-basis: 90%;
 }
 
 .me {
@@ -285,7 +286,7 @@ nav {
 .tech {
   display: flex;
   flex-flow: row wrap;
-  font-size: 2em;
+  font-size: 1.9em;
   justify-content: space-around;
   margin-top: 1em;
 }
