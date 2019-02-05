@@ -1,154 +1,201 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-        <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-133500314-1"></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
+<head>
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-133500314-1"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
 
-      gtag('config', 'UA-133500314-1');
-    </script>
-    <meta charset="utf-8">
-    <link rel="shortcut icon" href="logo.png">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link href="index.css" rel="stylesheet" type="text/css" />
-    <link href="https://fonts.googleapis.com/css?family=Asap|Varela+Round" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css">
-    <title>MrJustinFry</title>
-  </head>
-  <body>
-<header class="navBar" role="navigation">
-  <span><img src="logo2.png" alt="logo" class="logo" /></span>
-    <ul>
-      <li class="navList"><a href="#projects" class="navLink">Projects</a></li>
-      <li class="navList"><a href="https://github.com/Mrjustinfry" target="_blank" rel="noopener noreferrer" class="navLink">GitHub</a></li>
-      <li class="navList"><a href="https://www.linkedin.com/in/mrjustinfry/" target="_blank" rel="noopener noreferrer" class="navLink">LinkedIn</a></li>
-    </ul>
+    gtag('config', 'UA-133500314-1');
+  </script>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>MrJustinFry</title>
+  <meta name="description" content="My name is Justin and I make pretty neat websites.">
+  <meta name="author" content="Justin Fry">
+  <meta name="copyright" content="Justin Fry">
+  <meta name="keyword" content="Justin Fry, MrJustinFry, javascript, nodejs, node, webdev, web developer, continuous integration, github, react, redux">
+
+  <link rel="shortcut icon" href="logo.png">
+  <link href="index.css" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Asap|Varela+Round" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css">
+</head>
+<body>
+<header>
+<img src="burger.png" alt="menu" class="menu" />
 </header>
-<main class="mainBox" role="main">
-  <div class="bio">
-    <h1 class="header tyHead" role="header">Oh Hey! Thanks for stopping by!</h1>
-      <p class="hello"> My name is <span class="highlight">Justin</span> and I sure do love <span class="highlight">Web Development</span>!
-        </p>
-      <p class="pBio"> It all started when I took my first web development class in high school and thought to myself,
-          "My teacher must be some sort of wizard!" Fast forward to the present, and now I feel like
-          a wizard myself.
-        </p>
-      <p class="pBio"> I love to work with <span class="highlight">HTML5, CSS3, JavaScript/JQuery, React, Redux, Express, Mongoose, Mocha,
-          Chai,</span> and <span class="highlight">Enzyme</span> to name a few; and I can't help but challenge myself to keep learning more.
-        </p>
-      <p class="pBio">If I'm not studying <span class="highlight">new tech</span> or working on a project, I most likely have a video game controller
-         in hand either saving the princess or slaying demons. I'm also a huge <span class="highlight">Google</span> fanboy and I admire
-         most everything that they do.
-        </p>
-      <div class="emailBox"><div class="animate"><a href="mailto:mrjustinfry@gmail.com" class="emailMe">If you'd like to learn more, drop me a line!</a></div></div>
+<nav class="dropDown">
+<p><a href="#two" class="navLink">About</a></p> <p><a href="#three" class="navLink">Projects</a></p> <p><a href="#four" class="navLink">Contact</a><img src="burger2.png" alt="menuClose" class="close" /></p>
+</nav>
+<div class="introBox" id="one" data-color="#000000">
+<h1 class="intro">
+  <p><span class="letter">H</span>
+  <span class="letter">e</span>
+  <span class="letter">l</span>
+  <span class="letter">l</span>
+  <span class="letter">o</span>
+  <span class="letter">.</span></p></br>
+  <p><span class="letter">M</span>
+  <span class="letter">y</span></p>
+  <p>
+  <span class="letter">n</span>
+  <span class="letter">a</span>
+  <span class="letter">m</span>
+  <span class="letter">e</span></p>
+  <p><span class="letter">i</span>
+  <span class="letter">s</span> </p>
+  <p><span class="name">J</span>
+  <span class="name">u</span>
+  <span class="name">s</span>
+  <span class="name">t</span>
+  <span class="name">i</span>
+  <span class="name">n</span>
+  <span class="letter">.</span></p></br>
+  <p><span class="letter">I</span></p>
+  <p><span class="letter">b</span>
+  <span class="letter">u</span>
+  <span class="letter">i</span>
+  <span class="letter">l</span>
+  <span class="letter">d</span></p>
+  <p>
+  <span class="letter">w</span>
+  <span class="letter">e</span>
+  <span class="letter">b</span>
+  <span class="letter">s</span>
+  <span class="letter">i</span>
+  <span class="letter">t</span>
+  <span class="letter">e</span>
+  <span class="letter">s</span>
+  <span class="letter">.</span></p>
+  <div class="clear"></div>
+</div>
+<div class="about" id="two" data-color="#ff1bd1">
+  <h2 class="aboutMe">Get to know a little bit about me</h2>
+  <div class="pro">
+    <p class="aboutP"><img src="devicesTemplate.png" class="icons  responsive" alt="responsive" /><br/>
+      I build responsive applications that look great on all devices
+    </p>
+    <p class="aboutP"><img src="a11y.png" class="icons accesible" alt="accesible" /><br/>
+      My applications are accesible for users of all walks of life
+    </p>
+    <p class="aboutP"><img src="dynamic.png" class="icons dynamic" alt="dynamic" /><br/>
+      I build websites that are dynamic with scalability in mind
+    </p>
+    <p class="aboutP"><img src="thunderbolt.png" class="icons fast" alt="fast" /><br/>
+      I strive for lightning fast load times and best case run-times
+    </p>
   </div>
-      <h2 class="header checkIt" id="projects">Here are some of my recent projects</h2>
-  <div class="projects">
-    <div class="projectBox">
-        <div class="image">
-          <img src="bestow.jpg" alt="image" class="projectImage" />
-        </div>
-      <div class="infoBox">
-          <div class="description">
-            <h3 class="projectTitle">Bestow</h3>
-            <p class="pProject">Bestow was created to help you keep track of all of the things that you have borrowed or lent to friends or family. The app includes a bright and simple interface and easy to use features. To try a demo, use 'demo' for the username and 'demopass' for the password.</p>
-          </div>
-        <div class="links">
-          <p>
-            <a href="https://bestow-client.herokuapp.com/" target="_blank" class="projectLink">Visit the website</a>
-            <a href="https://github.com/Mrjustinfry/bestow-client" target="_blank" class="projectLink">Check out the Repo</a>
-          </p>
-        </div>
-        <div class="tech">
-          <p>
-            <i class="devicon-react-original-wordmark"></i> <i class="devicon-javascript-plain"></i>
-            <i class="devicon-html5-plain-wordmark"></i> <i class="devicon-css3-plain-wordmark"></i>
-             <i class="devicon-express-original"></i> <i class="devicon-mocha-plain"></i>
-             <i class="devicon-mongodb-plain-wordmark"></i> <i class="devicon-nodejs-plain"></i>
-          </p>
-        </div>
-      </div>
-    </div>
-    <div class="projectBox">
-        <div class="image">
-          <img src="gameroom.jpg" alt="image" class="projectImage2" />
-        </div>
-      <div class="infoBox">
-          <div class="description">
-            <h3 class="projectTitle">The Game Room</h3>
-            <p class="pProject">The Game Room is a retro styled Blog for video games. Write reviews, share tips and tricks, or just express your love for video games. To try a demo, use 'demo' for the username and 'demopass' for the password.</p>
-          </div>
-        <div class="links">
-          <p>
-            <a href="https://the-game-room.herokuapp.com/" target="_blank" class="projectLink">Visit the website</a>
-            <a href="https://github.com/Mrjustinfry/thegameroom" target="_blank" class="projectLink">Check out the Repo</a>
-          </p>
-        </div>
-        <div class="tech">
-          <p>
-            <i class="devicon-html5-plain-wordmark"></i> <i class="devicon-css3-plain-wordmark"></i>
-             <i class="devicon-javascript-plain"></i> <i class="devicon-jquery-plain-wordmark"></i> <i class="devicon-express-original"></i>
-             <i class="devicon-nodejs-plain"></i> <i class="devicon-mocha-plain"></i> <i class="devicon-mongodb-plain-wordmark"></i>
-          </p>
-        </div>
-      </div>
-    </div>
-    <div class="projectBox">
-        <div class="image">
-          <img src="smarternews.jpg" alt="image" class="projectImage2" />
-        </div>
-      <div class="infoBox">
-          <div class="description">
-            <h3 class="projectTitle">SmarterNews</h3>
-            <p class="pProject">SmarterNews is a news app that gives you more. You can view top news stories or search for the news you want to see. It also includes a built in Dictionary and Wikipedia search feature.</p>
-          </div>
-        <div class="links">
-          <p>
-            <a href="https://mrjustinfry.github.io/smarterNews/" target="_blank" class="projectLink">Visit the Website</a>
-            <a href="https://github.com/Mrjustinfry/smarterNews" target="_blank" class="projectLink">Check out the Repo</a>
-          </p>
-        </div>
-        <div class="tech">
-          <p>
-            <i class="devicon-html5-plain-wordmark"></i> <i class="devicon-css3-plain-wordmark"></i> <i class="devicon-javascript-plain"></i> <i class="devicon-jquery-plain-wordmark"></i> <i class="devicon-nodejs-plain"></i>
-          </p>
-        </div>
-      </div>
-    </div>
-    </div>
-    <div class="projectBox">
-        <div class="image">
-          <img src="marioquiz.jpg" alt="image" class="projectImage" />
-        </div>
-      <div class="infoBox">
-          <div class="description">
-            <h3 class="projectTitle">Super Mario Quiz</h3>
-            <p class="pProject">Just a fun little quiz to test your knowledge of the Super Mario Bros. series. Can you save the princess?</p>
-          </div>
-        <div class="links">
-          <p>
-            <a href="https://mrjustinfry.github.io/super-mario-quiz/" target="_blank" class="projectLink">Visit the website</a>
-            <a href="https://github.com/Mrjustinfry/super-mario-quiz" target="_blank" class="projectLink">Check out the Repo</a>
-          </p>
-        </div>
-        <div class="tech">
-          <p>
-            <i class="devicon-html5-plain-wordmark"></i> <i class="devicon-css3-plain-wordmark"></i> <i class="devicon-javascript-plain"></i> <i class="devicon-jquery-plain-wordmark"></i>
-          </p>
-        </div>
-      </div>
-    </div>
+  <div class="per">
+    <p class="aboutP"><img src="gamecontroller.png" class="icons games" alt="gamer"/><br/>
+      I spend my free time saving princesses and slaying demons
+    </p>
+    <p class="aboutP"><img src="brain.png" class="icons news" alt="news"/><br/>
+      I love studying new tech innovations and reading world news
+    </p>
+    <p class="aboutP"><img src="chicago.png" class="icons chicago" alt="chicago"/><br/>
+      I was born and raised in Chicago, Illinois
+    </p>
+    <p class="aboutP"><img src="music.png" class="icons music" alt="music"/><br/>
+      I'm usually listening to some really great classic rock
+    </p>
   </div>
-</main>
-<footer class="infoFoot" role="contentinfo">&#169; <span class="me">Mr.JustinFry</span> <span id="year"> </span><br />
+</div><div class="clear"></div>
+</div>
+<div class="projects" id="three" data-color="#f5f4f5">
+ <h2 class="projectHead">Check out some of my projects</h2>
+
+  <div class="projectBox">
+          <div class="image">
+            <img src="bestowDevices.png" alt="image" class="projectImage" />
+          </div>
+          <div class="infoBox">
+            <div class="description">
+              <h3 class="projectTitle">Bestow</h3>
+              <p class="pProject">Bestow was created to help you keep track of all of the things that you have borrowed or lent to friends or family. The app includes a bright and simple interface and easy to use features. Bestow is a React application with a custom built API. To try a demo, use 'demo' for the username and 'demopass' for the password.</p>
+            </div>
+          <div class="links">
+              <a href="https://bestow-client.herokuapp.com/" target="_blank" class="projectLink">Visit the website</a>
+              <a href="https://github.com/Mrjustinfry/bestow-client" target="_blank" class="projectLink">Check out the Repo</a>
+          </div>
+          <div class="tech">
+              <i class="devicon-react-original-wordmark"></i> <i class="devicon-javascript-plain"></i>
+              <i class="devicon-html5-plain-wordmark"></i> <i class="devicon-css3-plain-wordmark"></i>
+               <i class="devicon-express-original"></i> <i class="devicon-mocha-plain"></i>
+               <i class="devicon-mongodb-plain-wordmark"></i> <i class="devicon-nodejs-plain"></i>
+          </div>
+        </div>
+  </div>
+
+  <div class="projectBox">
+          <div class="image">
+            <img src="gameroomDevices.png" alt="image" class="projectImage" />
+          </div>
+          <div class="infoBox">
+            <div class="description">
+              <h3 class="projectTitle">The Game Room</h3>
+              <p class="pProject">The Game Room is a retro styled Blog for video games. Write reviews, share tips and tricks, or just express your love for video games. To try a demo, use 'demo' for the username and 'demopass' for the password.</p>
+            </div>
+          <div class="links">
+              <a href="https://the-game-room.herokuapp.com/" target="_blank" class="projectLink">Visit the website</a>
+              <a href="https://github.com/Mrjustinfry/thegameroom" target="_blank" class="projectLink">Check out the Repo</a>
+          </div>
+          <div class="tech">
+              <i class="devicon-html5-plain-wordmark"></i> <i class="devicon-css3-plain-wordmark"></i>
+               <i class="devicon-javascript-plain"></i> <i class="devicon-jquery-plain-wordmark"></i> <i class="devicon-express-original"></i>
+               <i class="devicon-nodejs-plain"></i> <i class="devicon-mocha-plain"></i> <i class="devicon-mongodb-plain-wordmark"></i>
+          </div>
+        </div>
+  </div>
+
+  <div class="projectBox">
+          <div class="image">
+            <img src="smarternewsDevices.png" alt="image" class="projectImage" />
+          </div>
+          <div class="infoBox">
+            <div class="description">
+              <h3 class="projectTitle">SmarterNews</h3>
+              <p class="pProject">SmarterNews is a news app that gives you more. You can view top news stories or search for the news you want to see. It also includes a built in Dictionary and Wikipedia search feature. SmartNews uses newsAPI, wikipedia, and pearson dictionary API's.</p>
+            </div>
+          <div class="links">
+              <a href="https://mrjustinfry.github.io/smarterNews/" target="_blank" class="projectLink">Visit the Website</a>
+              <a href="https://github.com/Mrjustinfry/smarterNews" target="_blank" class="projectLink">Check out the Repo</a>
+          </div>
+          <div class="tech">
+              <i class="devicon-html5-plain-wordmark"></i> <i class="devicon-css3-plain-wordmark"></i> <i class="devicon-javascript-plain"></i> <i class="devicon-jquery-plain-wordmark"></i> <i class="devicon-nodejs-plain"></i>
+          </div>
+        </div>
+  </div>
+
+  <div class="projectBox">
+          <div class="image">
+            <img src="marioDevices.png" alt="image" class="projectImage" />
+          </div>
+          <div class="infoBox">
+            <div class="description">
+              <h3 class="projectTitle">Super Mario Quiz</h3>
+              <p class="pProject">Just a fun little quiz to test your knowledge of the Super Mario Bros. series. The quiz consists of ten multiple choice questions with different responses based on how well the user answers the questions. There is also a "hidden easter egg". Can you save the princess?</p>
+            </div>
+          <div class="links">
+              <a href="https://mrjustinfry.github.io/super-mario-quiz/" target="_blank" class="projectLink">Visit the website</a>
+              <a href="https://github.com/Mrjustinfry/super-mario-quiz" target="_blank" class="projectLink">Check out the Repo</a>
+          </div>
+          <div class="tech">
+              <i class="devicon-html5-plain-wordmark"></i> <i class="devicon-css3-plain-wordmark"></i> <i class="devicon-javascript-plain"></i> <i class="devicon-jquery-plain-wordmark"></i>
+          </div>
+        </div>
+  </div>
+<div class="clear"></div>
+<button id="top">&uarr;</button>
+</div>
+<footer class="infoFoot" id="four" data-color="#000000" role="contentinfo">&#169; <span class="me">Mr.JustinFry</span> <span id="year"> </span><br />
 <a href="https://github.com/Mrjustinfry" target="_blank" rel="noopener noreferrer"><img src='github.png' alt='github' class="contact" /></a>
 <a href="mailto:mrjustinfry@gmail.com"><img src='email.png' alt='email' class="contact" /></a>
 <a href="https://www.linkedin.com/in/mrjustinfry/" target="_blank" rel="noopener noreferrer"><img src='linkedin.png' alt='linkedIn' class="contact" /></a>
-</footer>
+<div class="clear"></div></footer>
 <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
 <script type="text/javascript" src="index.js"></script>
-  </body>
+</body>
 </html>

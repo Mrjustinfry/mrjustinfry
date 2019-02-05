@@ -1,151 +1,142 @@
-
 * {
   box-sizing: border-box;
 }
 
-html {
-  background-color: ghostwhite;
-}
-
-ul {
-  float: right;
-  position: absolute;
-  top: 0;
-  right: 0;
-  font-size: .3em;
-  padding: 1em;
-  margin-top: 3em;
-}
-
 body {
+  background: black;
+  transition: all 200ms;
+  will-change: background;
+}
+
+.introBox {
+  margin-left: 25%;
+  color: whitesmoke;
+  height: 100vh;
+}
+
+.intro {
   font-family: 'Asap', sans-serif;
-  margin: 0 auto;
-  width: 100%;
+  margin-top: 1.7em;
 }
 
-.logo {
-  height: 8em;
-  width: 8em;
+.intro:hover {
+  cursor: default;
 }
 
-.highlight {
+.letter:hover {
   color: #ff1bd1;
-  font-weight: bold;
+  cursor: default;
 }
 
-.navList {
-  display: inline;
-  list-style: none;
-  padding: 1em;
-  padding-right: 1em;
+.name {
+  color: #ff1bd1;
 }
 
-.navBar {
-  border-bottom: 3px solid #ff1bd1;
-  position: absolute;
+.name:hover {
+  color: whitesmoke;
+  cursor: default;
+}
+
+.menu, .close {
+  height: 1.5em;
+  position: fixed;
+  top: .7em;
+  right: 1.5em;
+  width: 1.5em;
+}
+
+.menu:hover, .close:hover {
+  cursor: pointer;
+  animation-name: turn;
+  animation-duration: 1s;
+  animation-timing-function: ease;
+}
+
+header {
+  background-color: #ff1bd1;
+  position: fixed;
+  right: 0;
+}
+
+nav {
+  background-color: #ff1bd1;
+  display: none;
+  justify-content: flex-start;
+  position: fixed;
   top: 0;
   right: 0;
   width: 100%;
-  height: 5em;
-  background-color: black;
-  color: white;
-  margin: 0 auto;
+  box-shadow: 0px 1px 10px black;
 }
 
 .navLink {
   text-decoration: none;
-  color: #ff1bd1;
-  font-family: 'Asap', sans-serif;
-  font-size: small;
+  font-family: 'Varela Round', sans-serif;
+  color: black;
+  margin: 1em;
 }
 
 .navLink:hover {
+    cursor: pointer;
+}
+
+#top {
+  position: fixed;
+  bottom: 0;
+  right: .3em;
+  border: none;
+  background-color: transparent;
+  color: #ff1bd178;
+  font-size: xx-large;
+  font-weight: bolder;
+  border-radius: .2em;
+  margin-bottom: .3em;
+  padding-bottom: .2em;
+}
+
+#top:hover {
   cursor: pointer;
+  color: #ff1bd1;
+  background-color: #01010142;
+}
+
+.about {
   color: white;
   font-weight: bold;
-  transition-duration: 500ms;
-}
-
-.hello {
-  text-align: center;
-  font-weight: bold;
-  font-size: medium;
-}
-
-.mainBox {
-  margin-top: 7em;
-}
-
-.emailBox {
-  text-align: center;
-  font-size: larger;
-  background-color: black;
-  border-radius: 1em;
-  padding: 1em;
-  width: 85%;
-  margin-left: auto;
-  margin-right: auto;
-  margin-bottom: 2em;
-}
-
-.animate:hover {
-  animation-name: clickMe;
-  animation-timing-function: ease-in-out;
-  animation-duration: 1s;
-  animation-iteration-count: 1;
-}
-
-.emailMe {
-  text-decoration: none;
-  color: #ff1bd1;
-  font-weight: bold;
-}
-
-.emailMe:hover {
-  cursor: pointer;
-  color: #f772ih;
-  font-weight: bolder;
-}
-
-.foot {
-  display: relative;
-  text-align: center;
-  width: 100%;
-  height: 3em;
-  margin: 0 auto;
-}
-
-.infoBox {
+  margin-top: 5em;
   display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-}
-
-.checkIt {
-  position: sticky;
-  top: 0;
-  background-color: ghostwhite;
-  border-bottom: 1px solid #f7a1e8;
+  justify-content: space-around;
+  flex-flow: row wrap;
 }
 
 .contact {
-  height: 1.5em;
-  width: 1.5em;
+  height: 2.5em;
+  width: 2.5em;
   margin-top: 1em;
   margin-left: 1em;
-  background-color: #ff1bd1;
-  border-radius: 1em;
-  border: 1px solid black;
+  border-radius: 2em;
+}
+
+.contact:hover {
+  box-shadow: inset -20px -19px 20px 20px #ff1bd1;
 }
 
 .infoFoot {
-  font-family: 'Nunito', sans-serif;
+  font-family: 'Asap', sans-serif;
   text-align: center;
   color: black;
   width: 100%;
   margin-top: 2em;
   margin-bottom: 2em;
-  font-size: small;
+  font-size: medium;
+}
+
+.infoBox {
+  color: black;
+  border-radius: 1em;
+  padding: 3em;
+  background-color: #ff1bd1;
+  box-shadow: 6px 6px black;
 }
 
 .me {
@@ -153,66 +144,78 @@ body {
   font-family: 'Varela Round', sans-serif;
 }
 
-i {
-  font-size: 2em;
-  color: #ff1bd1;
-  padding: 1%;
-}
-
-p {
-  padding: 1em;
-  text-indent: 1em;
-}
-
-.pBio {
-  font-size: 1.3em;
-}
-
-.pProject {
-  font-size: small;
-}
-
-.header {
+.aboutMe {
+  width: 85vw;
   text-align: center;
-  font-size: medium;
+  border-bottom: 3px solid black;
+  color: black;
+  font-family: 'Varela Round', sans-serif;
+  padding: .5em;
+  margin: 2em auto;
+}
+
+.projectHead {
+  width: 85vw;
+  text-align: center;
+  border-bottom: 3px solid #ff1bd1;
   color: #ff1bd1;
   font-family: 'Varela Round', sans-serif;
-  padding: 1em;
-  margin: 0 auto;
+  padding: .5em;
+  margin: 2em auto;
 }
 
-.tyHead {
-  padding: 2em;
+.clear {
+  clear: both;
 }
 
-.bio {
-  font-size: small;
+@keyframes turn {
+  0%, 100% {
+    transform: initial;
+  }
+  33% {
+    transform: rotate(15deg);
+  }
+  66% {
+    transform: rotate(-15deg);
+  }
 }
 
-img {
-  height: 20em;
-  width: 20em;
+::-webkit-scrollbar {
+    width: .5em;
+}
+
+::-webkit-scrollbar-track {
+    background-color: black;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #ff1bd1;
+    border-radius: 1em;
+    border: 1px solid black;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: white;
+}
+
+
+.pProject {
+  font-family: 'Asap', sans-serif;
+  font-size: larger;
+  line-height: 1.3em;
 }
 
 .projects {
-  margin-top: 3em;
-  display: flex;
-  flex-flow: row wrap;
-  justify-content: space-around;
+  margin-top: 5em;
+  padding: .5em;
 }
 
 .projectBox {
+  color: #ff1bd1;
   display: flex;
+  margin: 2em auto;
   justify-content: space-around;
   flex-flow: row wrap;
-  padding: 1em;
-  border-radius: 1em;
-  border: 2px solid black;
-  background-color: black;
-  color: ghostwhite;
-  margin-bottom: 2em;
-  flex: 1;
-  margin: 1em;
 }
 
 .projectLink {
@@ -221,93 +224,79 @@ img {
   background-color: ghostwhite;
   padding: .5em;
   border-radius: .5em;
+  font-family: 'Varela Round', sans-serif;
+  margin: .5em;
+  box-shadow: 6px 6px black;
+  flex-basis: 18em;
 }
 
 .projectLink:hover {
   cursor: pointer;
   background-color: #ff1bd1;
+  border: 1px solid white;
   color: white;
   transition-duration: 500ms;
 }
 
+.aboutP {
+  background-color: black;
+  padding: 3em;
+  margin: 2em;
+  font-family: 'Varela Round', sans-serif;
+  font-size: medium;
+  flex: 1 2;
+  text-align: center;
+  height: 20em;
+}
+
+.aboutP:hover {
+  box-shadow: 3px 4px 20px 0px purple;
+  font-weight: bold;
+  color: #faaff4;
+}
+
+.pro, .per {
+  display: flex;
+  justify-content: space-evenly;
+  flex-flow: row wrap;
+}
 
 .projectTitle {
-  font-size: medium;
+  font-size: x-large;
   font-weight: bold;
-  color: #ff1bd1;
+  color: white;
   font-family: 'Varela Round', sans-serif;
   text-align: center;
+  background-color: black;
+  padding: 1em;
+  border-radius: 1em;
 }
 
 .projectImage {
-  height: 10em;
-  width: 10em;
-  border-radius: 2em;
-  border: 1px solid #ff1bd1;
+  height: 15em;
 }
 
-.projectImage2 {
-  height: 9em;
-  width: 13em;
-  border-radius: 2em;
-  border: 1px solid #ff1bd1;
+.icons {
+  height: 5em;
+  width: 5em;
+  margin-top: 1em;
 }
 
-.tech, .links {
+.tech {
+  display: flex;
+  flex-flow: row wrap;
+  font-size: 2em;
+  justify-content: space-around;
+  margin-top: 1em;
+}
+
+.links {
   text-align: center;
-  font-size: xx-small;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
 }
 
-::-webkit-scrollbar {
-    width: .5em;
-}
-
-::-webkit-scrollbar-track {
-    box-shadow: inset 0 0 5px grey;
-}
-
-::-webkit-scrollbar-thumb {
-    background: #ff1bd1;
-}
-
-::-webkit-scrollbar-thumb:hover {
-    background: #ff1bd1;
-}
-
-@keyframes clickMe {
-  0%, 100% {
-    transform: initial;
-  }
-  50% {
-    transform: rotateX(180deg);
-  }
-}
-
-@media only screen and (min-width: 425px) {
-
-  .hello, .header, .projectTitle, .emailMe {
-    font-size: x-large;
-  }
-
-  .pBio {
-    font-size: 1.6em;
-  }
-
-  .navLink, .pProject, .tech, .links, .infoFoot {
-    font-size: medium;
-  }
-
-  .projectImage {
-    height: 20em;
-    width: 20em;
-  }
-
-  .projectImage2 {
-    height: 20em;
-    width: 30em;
-  }
-
-  .tyHead {
-    padding: .5em;
-  }
+.image {
+  text-align: center;
 }
