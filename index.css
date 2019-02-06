@@ -17,6 +17,7 @@ body {
 .intro {
   font-family: 'Asap', sans-serif;
   margin-top: 1.7em;
+  font-size: 2em;
 }
 
 .intro:hover {
@@ -52,6 +53,29 @@ body {
   animation-timing-function: ease;
 }
 
+.navContact {
+  display: flex;
+  justify-content: space-around;
+  flex: 1 0 100%;
+  background-color: black;
+  border-bottom: 1px solid #ff1bd1;
+}
+
+.navContactLink {
+  text-decoration: none;
+  font-weight: bold;
+  padding: .5em;
+  color: white;
+  background-color: black;
+  margin: .3em auto;
+  font-family: 'Varela Round', sans-serif;
+}
+
+.navContactLink:hover {
+  cursor: pointer;
+  color: #ff1bd1;
+}
+
 header {
   background-color: #ff1bd1;
   position: fixed;
@@ -67,6 +91,7 @@ nav {
   right: 0;
   width: 100%;
   box-shadow: 0px 1px 10px black;
+  flex-flow: row wrap;
 }
 
 .navLink {

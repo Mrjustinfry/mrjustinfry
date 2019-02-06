@@ -28,6 +28,13 @@ $('.close').on('click', function(){
 })
 }
 
+function linkSwap() {
+  $('.navContact').hide();
+  $('#openLink').on('click', function() {
+    $('.navContact').toggle('hidden');
+  })
+}
+
 function colorSwap() {
   $(window).scroll(function () {
     if ($(document).scrollTop() >= $("#one").position().top) {
@@ -54,4 +61,5 @@ displayYear();
 dropDown();
 closeNav();
 colorSwap();
+linkSwap();
 })();
