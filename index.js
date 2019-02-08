@@ -37,17 +37,19 @@ function linkSwap() {
 
 function colorSwap() {
   $(window).scroll(function () {
+    $('.navContact').hide();
     if ($(document).scrollTop() >= $("#one").position().top) {
-            $('body').css('background-color', $("#one").attr("data-color"));
+          $('#top').css('display', 'none');
+          $('.about').css('visibility', 'hidden');
+          $('body').css('background-color', $("#one").attr("data-color"));
     };
     if ($(document).scrollTop() > $("#two").position().top) {
-            $('body').css('background-color', $("#two").attr("data-color"))
+          $('#top').css('display', 'initial');
+          $('.about').css('visibility', 'initial');
+          $('body').css('background-color', $("#two").attr("data-color"))
     };
     if ($(document).scrollTop() > $("#three").position().top) {
-            $('body').css('background-color', $("#three").attr("data-color"))
-    };
-    if ($(document).scrollTop() > $("#four").position().top) {
-            $('body').css('background-color', $("#four").attr("data-color"))
+          $('body').css('background-color', $("#three").attr("data-color"))
     };
 });
 }
@@ -56,6 +58,7 @@ function colorSwap() {
   $('#top').on('click', function(e) {
   e.preventDefault();
   toTop();
+  $('#top').css('display', 'none');
 })
 displayYear();
 dropDown();

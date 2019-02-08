@@ -11,7 +11,6 @@ body {
 .introBox {
   margin-left: 25%;
   color: whitesmoke;
-  height: 100vh;
 }
 
 .intro {
@@ -106,11 +105,13 @@ nav {
 }
 
 #top {
+  display: none;
   position: fixed;
+  z-index: 2;
   bottom: 0;
   right: .3em;
   border: none;
-  background-color: transparent;
+  background-color: #01010142;
   color: #ff1bd178;
   font-size: xx-large;
   font-weight: bolder;
@@ -122,7 +123,7 @@ nav {
 #top:hover {
   cursor: pointer;
   color: #ff1bd1;
-  background-color: #01010142;
+  //background-color: #01010142;
 }
 
 .about {
@@ -150,15 +151,19 @@ nav {
   font-family: 'Asap', sans-serif;
   text-align: center;
   color: black;
-  width: 100%;
-  margin-top: 2em;
-  margin-bottom: 2em;
+  width: 100vw;
   font-size: medium;
+  border-top: 2px double lightgray;
+  background-color: #c3c1c363;
+  position: relative;
+  bottom: -1em;
+  right: 1em;
+  padding: 1em;
 }
 
 .infoBox {
   color: black;
-  border-radius: 1em;
+  //border-radius: 1em;
   padding: 3em;
   background-color: #ff1bd1;
   box-shadow: 6px 6px black;
@@ -239,7 +244,7 @@ nav {
 .projectBox {
   color: #ff1bd1;
   display: flex;
-  margin: 2em auto;
+  margin: 5rem auto;
   justify-content: space-around;
   flex-flow: row wrap;
 }
@@ -249,7 +254,8 @@ nav {
   color: #c2009b;
   background-color: ghostwhite;
   padding: .5em;
-  border-radius: .5em;
+  border: 1px solid transparent;
+  //border-radius: .5em;
   font-family: 'Varela Round', sans-serif;
   margin: .5em;
   box-shadow: 6px 6px black;
@@ -273,18 +279,23 @@ nav {
   flex: 1 2;
   text-align: center;
   height: 20em;
+  transition: 300ms ease-in-out;
 }
 
+
 .aboutP:hover {
-  box-shadow: 3px 4px 20px 0px purple;
-  font-weight: bold;
-  color: #faaff4;
+  box-shadow: 5px 5px 0px 0px white;
+  transform: translate(-.3em, -.3em);
 }
 
 .pro, .per {
   display: flex;
   justify-content: space-evenly;
   flex-flow: row wrap;
+}
+
+.about {
+  visibility: hidden;
 }
 
 .projectTitle {
@@ -295,7 +306,6 @@ nav {
   text-align: center;
   background-color: black;
   padding: 1em;
-  border-radius: 1em;
 }
 
 .projectImage {
