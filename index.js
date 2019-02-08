@@ -46,9 +46,11 @@ function colorSwap() {
     if ($(document).scrollTop() > $("#two").position().top) {
           $('#top').css('display', 'initial');
           $('.about').css('visibility', 'initial');
+          $('.projects').css('visibility', 'hidden');
           $('body').css('background-color', $("#two").attr("data-color"))
     };
     if ($(document).scrollTop() > $("#three").position().top) {
+          $('.projects').css('visibility', 'initial');
           $('body').css('background-color', $("#three").attr("data-color"))
     };
 });
