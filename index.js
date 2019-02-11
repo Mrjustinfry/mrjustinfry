@@ -44,12 +44,13 @@ function colorSwap() {
           $('body').css('background-color', $("#one").attr("data-color"));
     };
     if ($(document).scrollTop() > $("#two").position().top) {
-          $('#top').css('display', 'initial');
+          $('#top').css('display', 'block');
           $('.about').css('visibility', 'initial');
           $('.projects').css('visibility', 'hidden');
           $('body').css('background-color', $("#two").attr("data-color"))
     };
     if ($(document).scrollTop() > $("#three").position().top) {
+          $('#top').css('display', 'block');
           $('.projects').css('visibility', 'initial');
           $('body').css('background-color', $("#three").attr("data-color"))
     };

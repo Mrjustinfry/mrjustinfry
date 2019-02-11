@@ -9,6 +9,7 @@ body {
   background: black;
   transition: all 200ms;
   will-change: background;
+  scroll-snap-type: y mandatory;
 }
 
 
@@ -135,9 +136,7 @@ nav {
   color: white;
   font-weight: bold;
   margin-top: 5em;
-  //display: grid;
-  justify-content: space-around;
-  flex-flow: row wrap;
+  scroll-snap-align: start;
   padding: .5em;
 }
 
@@ -246,6 +245,7 @@ nav {
 .projects {
   margin-top: 5em;
   padding: .5em;
+  scroll-snap-type: y mandatory;
 }
 
 .projectBox {
@@ -254,7 +254,7 @@ nav {
   margin: 5rem auto;
   justify-content: space-around;
   flex-flow: row wrap;
-  scroll-snap-align: start;
+  scroll-snap-align: center;
   scroll-snap-stop: always;
 }
 
@@ -298,13 +298,11 @@ nav {
 
 .tiles {
   display: grid;
-  scroll-snap-align: start;
   grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
 }
 
 .about, .projects {
   visibility: hidden;
-  scroll-snap-type: y mandatory;
 }
 
 .eight {
