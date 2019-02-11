@@ -9,7 +9,7 @@ body {
   background: black;
   transition: all 200ms;
   will-change: background;
-  scroll-snap-type: y mandatory;
+  scroll-snap-type: y proximity;
 }
 
 
@@ -254,7 +254,7 @@ nav {
   margin: 5rem auto;
   justify-content: space-around;
   flex-flow: row wrap;
-  scroll-snap-align: center;
+  scroll-snap-align: start;
   scroll-snap-stop: always;
 }
 
