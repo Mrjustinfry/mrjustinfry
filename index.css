@@ -1,17 +1,18 @@
 
-//alternate color #840d6c (Add border/change text color);
-
 * {
   box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+html {
+  scroll-behavior: smooth;
 }
 
 body {
   background: black;
   transition: all 200ms;
   will-change: background;
-  scroll-snap-type: y proximity;
 }
-
 
 .introBox {
   margin-left: 25%;
@@ -136,7 +137,6 @@ nav {
   color: white;
   font-weight: bold;
   margin-top: 5em;
-  scroll-snap-align: start;
   padding: .5em;
 }
 
@@ -245,7 +245,6 @@ nav {
 .projects {
   margin-top: 5em;
   padding: .5em;
-  scroll-snap-type: y mandatory;
 }
 
 .projectBox {
@@ -254,8 +253,6 @@ nav {
   margin: 5rem auto;
   justify-content: space-around;
   flex-flow: row wrap;
-  scroll-snap-align: start;
-  scroll-snap-stop: always;
 }
 
 .projectLink {
