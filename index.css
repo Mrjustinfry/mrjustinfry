@@ -1,7 +1,6 @@
 
 * {
   box-sizing: border-box;
-    scroll-behavior: smooth;
 }
 
 html {
@@ -299,7 +298,7 @@ nav {
 }
 
 .about, .projects {
-  visibility: hidden;
+  opacity: 0;
 }
 
 .eight {

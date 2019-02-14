@@ -40,18 +40,18 @@ function colorSwap() {
     $('.navContact').hide();
     if ($(document).scrollTop() >= $("#one").position().top) {
           $('#top').css('display', 'none');
-          $('.about').css('visibility', 'hidden');
+          $('.about').css('opacity', '0');
           $('body').css('background-color', $("#one").attr("data-color"));
     };
     if ($(document).scrollTop() > $("#two").position().top) {
           $('#top').css('display', 'block');
-          $('.about').css('visibility', 'initial');
-          $('.projects').css('visibility', 'hidden');
+          $('.about').css('opacity', '1');
+          $('.projects').css('opacity', '0');
           $('body').css('background-color', $("#two").attr("data-color"))
     };
     if ($(document).scrollTop() > $("#three").position().top) {
           $('#top').css('display', 'block');
-          $('.projects').css('visibility', 'initial');
+          $('.projects').css('opacity', '1');
           $('body').css('background-color', $("#three").attr("data-color"))
     };
 });
